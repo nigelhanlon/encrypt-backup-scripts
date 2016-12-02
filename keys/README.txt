@@ -1,0 +1,1 @@
+This ouput folder should contain the public key file publickey.pem.

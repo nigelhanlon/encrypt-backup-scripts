@@ -19,10 +19,10 @@ then
     # Clean tmp directory
     rm ./tmp/*
 
-    # Generate a 256bit random symetric key
+    # Generate a 256bit random symmetric key
     openssl rand -base64 32 > ./tmp/key.bin
 
-    # Encrypt the symetric key. 
+    # Encrypt the symmetric key. 
     openssl rsautl -encrypt -inkey ./keys/publickey.pem -pubin -in ./tmp/key.bin -out ./tmp/key.bin.enc
 
     # Encrypt the chosen file using random key

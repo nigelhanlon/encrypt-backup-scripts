@@ -1,0 +1,1 @@
+This folder is used to store temp files during encryption/decryption operations.
